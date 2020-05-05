@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Admin_Assign_Project"
+    android:orientation="vertical"
+    android:background="@drawable/funny_back"
+    android:scaleType="centerCrop">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Assign Project"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textColor="#FFC107"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="60dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Logout"
+            android:textColor="#009688"
+            android:id="@+id/a_logout"
+            android:layout_marginLeft="60dp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter the Employee ID"
+        android:textColor="#FFC107"
+        android:textSize="20sp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:hint="Employee Id"
+            android:id="@+id/e_id_p"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GO"
+            android:id="@+id/go_button"
+            />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Employee's details"
+        android:textColor="#FFC107"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/e_heading_p"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardElevation="@dimen/cardview_compat_inset_shadow"
+        android:clickable="true"
+        android:onClick="cardClicked"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name_e_p"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/email_e_p"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/dept_e_p"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Department"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/project_e_p"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Project Assigned"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/mob_e_p"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mobile Number"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:onClick="backPage"
+        />
+
+</LinearLayout>
+

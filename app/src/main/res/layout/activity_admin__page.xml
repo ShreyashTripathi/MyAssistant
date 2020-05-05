@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin_Page"
+    android:orientation="vertical"
+    android:background="@drawable/funny_back"
+    android:scaleType="centerCrop">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome Admin"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textColor="#FFC107"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="30dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Logout"
+            android:textColor="#009688"
+            android:id="@+id/a_logout"
+            android:layout_marginLeft="20dp"
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="View Employee Data"
+        android:textColor="#009688"
+        android:onClick="gotoViewData"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Assign Projects"
+        android:textColor="#009688"
+        android:onClick="gotoAssignProject"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Feedback to Employees"
+        android:textColor="#009688"
+        android:onClick="sendFeedback"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Feedback Received"
+        android:textColor="#009688"
+        android:onClick="receiveFeedback"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Employee Performance"
+        android:textColor="#009688"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Communications"
+        android:textColor="#009688"
+        />
+
+</LinearLayout>
+
